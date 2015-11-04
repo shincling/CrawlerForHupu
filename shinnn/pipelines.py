@@ -5,7 +5,9 @@
 
 class ShinnnPipeline(object):
     def __init__(self):
-        self.file=open(r'e:\test\hupu.txt','wb')
+        self.file=open(r'e:\test\hupu1.txt','wb')
     def process_item(self, item, spider):
-        self.file.write(item['title'] + '\t'+ item['link'] + '\t' + item['content']+item['number']+'\n')
+        self.file.write(item['title'] + '\t'+ item['link'] +'\t'+item['content']+ '\t' +item['number']+'\n\n\n')#
         return item
+
+
